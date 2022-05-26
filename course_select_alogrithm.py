@@ -146,7 +146,7 @@ def main(major, minor, prof, courses_taken):
             if file.level[i] == 0:
               should_take_courses_major["Level"].append("CORE")
             else:
-              should_take_courses_major["Level"].append(file.level[i]*100)
+              should_take_courses_major["Level"].append(file.difficulty[i])
             should_take_courses_major["Intrucstor"].append(file.intrucstor[i])
             should_take_courses_major["Date"].append(file.date[i])
             should_take_courses_major["Start time"].append(file.starttime[i])
@@ -168,7 +168,7 @@ def main(major, minor, prof, courses_taken):
             continue
           should_take_courses_minor["Priority Score"].append(available_course_minor[i])
           should_take_courses_minor["Courses"].append(file.course[i])
-          should_take_courses_minor["Level"].append(file.level[i]*100)
+          should_take_courses_minor["Level"].append(file.difficulty[i])
           should_take_courses_minor["Intrucstor"].append(file.intrucstor[i])
           should_take_courses_minor["Date"].append(file.date[i])
           should_take_courses_minor["Start time"].append(file.starttime[i])
