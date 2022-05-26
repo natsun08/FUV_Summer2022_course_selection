@@ -1,0 +1,15 @@
+﻿course,major,intrucstor,level,date,prerequisite,starttime,endtime
+Global Humanities and Social Change,CORE,Mark Frank,0,Tue;Thu,,13:15,14:45
+Modern Vietnamese Culture and Society,CORE,Pamela Corey,0,Tue;Thu,,8:00,9:30
+Design and Systems Thinking,CORE,Truong Trung Kien,0,Tue;Thu,,9:45,11:15
+Programming for Data Science and Visualization,CS,Huynh The Dang,1,Mon,,9:00,12:00
+Introduction to Artificial Intelligence,CS,Ha Viet Uyen Synh,2,Thu,,9:00,12:00
+Introduction to Cyber Security,CS,Murthy Rallapalli,2,Wed;Fri,Computer Science 1,9:45,11:15
+Independent Study: Machine Learning,CS,Murthy Rallapalli,2,Wed,Computer Science 1;Computer Science 2,13:15,16:14
+Multivariable Calculus,MATH,Janet Harris,1,Wed;Fri,Calculus,13:15,16:15
+Introduction to Data Analysis,MATH,Mai Dao,1,Tue,,8:00,11:00
+Probability,MATH,Tran The Hien,2,Wed;Fri,Calculus,9:45,11:15
+"Sensor, Measurement and Analysis",ENG,Nguyen Hop Minh,2,Wed;Fri,,9:45,11:15
+Sustainable development: Science and Industries ,IS,Nguyen Thi Trang,1,Mon;Wed,,13:15,14:45
+Aigae,IS,Van Vu,2,Wed,Scientific Inquiry,13:15,16:15
+Introduction to Bioinformatics,IS,Ly Le,2,Mon;Wed,Scientific Inquiry,9:00,12:00
