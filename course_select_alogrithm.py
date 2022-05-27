@@ -69,9 +69,7 @@ def filter_prerequisite(user, prerequisite):
     return True
 
   prerequisite = prerequisite.split(';')
-  print(user["courses_taken"])
   for course in prerequisite:
-    print(course)
     if course not in user["courses_taken"]:
       return False
 
