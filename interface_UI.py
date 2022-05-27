@@ -188,7 +188,7 @@ while True:
         
     if event == "Reset":
         reset_visual(window_major)
-        print(window)
+        
 
 window.close()
 
