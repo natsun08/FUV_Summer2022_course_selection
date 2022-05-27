@@ -28,6 +28,9 @@ def filter(user,level_priority,major):
   with open("available_courses.csv", encoding = 'utf-8') as readfile:
     file = pd.read_csv(readfile)
     for i in range(len(file)):
+      majors = file.major[i]
+      if ";" in file.major[i]:
+        majors = file.major[i].split(";")
       #the user already taken this course
       priority = 0
       if (file.course[i] in user["courses_taken"]): 
@@ -38,7 +41,7 @@ def filter(user,level_priority,major):
         priority += 900
 
       #if this course is in user's major
-      elif (user[major] in file.major[i]):
+      elif (user[major] in majors):
         #pre taken
         if (filter_prerequisite(user, file.prerequisite[i])):  
           if (file.level[i] == level_priority):
@@ -46,7 +49,6 @@ def filter(user,level_priority,major):
             
           else:
             priority += 100
-
       #if user's prefered professor teaches
       if (file.intrucstor[i] in user['prof']):
         priority += 50
@@ -66,8 +68,10 @@ def filter_prerequisite(user, prerequisite):
   if (type(prerequisite) == float):
     return True
 
-  prerequisite = prerequisite.lower().split(';')
+  prerequisite = prerequisite.split(';')
+  print(user["courses_taken"])
   for course in prerequisite:
+    print(course)
     if course not in user["courses_taken"]:
       return False
 

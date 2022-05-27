@@ -4,7 +4,7 @@ from course_select_alogrithm import main
 
 sg.theme('Dark Amber')
 
-choose_major = ["Choose one","CS", "IS", "MATH", "ENG"]
+choose_major = ["Choose one","CS", "IS", "MATH", "ENG", "ART","ECON","HIS","LIT","PSY","SOCI","VS"]
 past_courses_checkbox = []
 past_courses = []
 prof_list = []
